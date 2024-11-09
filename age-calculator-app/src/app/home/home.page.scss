@@ -1,0 +1,36 @@
+
+ion-content {
+  form{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .container-inputs{
+      display: flex;
+      gap: 0.5rem;
+      ion-label{
+        text-transform: uppercase;
+      }
+    }
+    .container-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      hr{
+        border: 2px solid;
+        width: 5rem;
+        height: 1rem;
+      }
+      ion-button.btn-calculator {
+        --border-radius: 50%;
+        --background: hsl(259, 100%, 65%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Age Calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="calculateAge()">
+    <div class="container-inputs">
+      <ion-item>
+        <ion-label position="stacked">Day</ion-label>
+        <ion-input type="number" placeholder="DD" name="day" [(ngModel)]="day" required></ion-input>
+        <div *ngIf="errorDay" class="error">{{ errorDay }}</div>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Month</ion-label>
+        <ion-input type="number" placeholder="MM" name="month" [(ngModel)]="month" required></ion-input>
+        <div *ngIf="errorMonth" class="error">{{ errorMonth }}</div>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Year</ion-label>
+        <ion-input type="number" placeholder="YYYY" name="year" [(ngModel)]="year" required></ion-input>
+        <div *ngIf="errorYear" class="error">{{ errorYear }}</div>
+      </ion-item>
+    </div>
+
+    <div class="container-btn">
+      <hr>
+      <ion-button type="submit" class="btn-calculator center" fill="solid">
+        <ion-icon src="../../assets/icon/icon-arrow.svg"></ion-icon>
+      </ion-button>
+      <hr>
+    </div>
+  </form>
+
+  <div class="container-result" *ngIf="ageCalculated">
+    <p><span>{{ ageYears }}</span> years</p>
+    <p><span>{{ ageMonths }}</span> months</p>
+    <p><span>{{ ageDays }}</span> days</p>
+  </div>
+</ion-content>
