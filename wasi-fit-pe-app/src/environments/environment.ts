@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase:{
-    apiKey: "AIzaSyBoR39-OU4cdG1E3AIb0fWY6lF1l_Dh9Lk",
-    authDomain: "wasi-fit-pe-app.firebaseapp.com",
-    databaseURL: "https://wasi-fit-pe-app-default-rtdb.firebaseio.com",
-    projectId: "wasi-fit-pe-app",
-    storageBucket: "wasi-fit-pe-app.firebasestorage.app",
-    messagingSenderId: "110399370438",
-    appId: "1:110399370438:web:3e8f7f4f32e946b83b93c7"
+    apiKey: "TU-API-KEY",
+    authDomain: "authDomain",
+    databaseURL: "databaseURL",
+    projectId: "projectId",
+    storageBucket: "storageBucket",
+    messagingSenderId: "messagingSenderId",
+    appId: "appId"
   }
 };
 
